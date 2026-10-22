@@ -11,10 +11,10 @@
 <style>
 :root{
   --bg:#05050a;--card:#0c0c14;--card2:#11111b;--text:#fff;--muted:#9c9baa;
-  --purple:#ff3030;--purple2:#c90000;--line:#272331;--green:#18df78;
+  --purple:#d52bdf;--purple2:#9413c8;--line:#272331;--green:#18df78;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
 body{
  margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;
  overflow-x:hidden;
@@ -52,7 +52,7 @@ header{
  display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;
  border:0;border-radius:999px;padding:16px 25px;margin-top:28px;font-weight:900;
  background:linear-gradient(110deg,var(--purple2),var(--purple));color:white;
- box-shadow:0 0 34px #ff202055;cursor:pointer
+ box-shadow:0 0 34px #d52bdf55;cursor:pointer
 }
 .btn.whatsapp{background:#16c86b;box-shadow:0 0 30px #16c86b33}
 .stats{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:25px}
@@ -100,10 +100,10 @@ input{
  .heading{font-size:33px}
 }
 
-.kx-brand-logo{display:flex;align-items:center;justify-content:center;gap:12px;min-height:170px;margin:0 0 18px;padding:22px;border:1px solid #5b1717;border-radius:18px;background:radial-gradient(circle at 30% 30%,#3a0505,#08080d 65%);box-shadow:0 0 28px #ff202022}
-.kx-brand-mark{display:grid;place-items:center;width:78px;height:78px;border-radius:50%;font-size:48px;font-weight:1000;font-style:italic;color:#fff;border:3px solid #ff2929;text-shadow:0 0 15px #ff2020;box-shadow:0 0 20px #ff202044}
+.kx-brand-logo{display:flex;align-items:center;justify-content:center;gap:12px;min-height:170px;margin:0 0 18px;padding:22px;border:1px solid #76228a;border-radius:18px;background:radial-gradient(circle at 30% 30%,#430b59,#08080d 65%);box-shadow:0 0 28px #d52bdf22}
+.kx-brand-mark{display:grid;place-items:center;width:78px;height:78px;border-radius:50%;font-size:48px;font-weight:1000;font-style:italic;color:#fff;border:3px solid #ff2929;text-shadow:0 0 15px #d52bdf;box-shadow:0 0 20px #d52bdf44}
 .kx-brand-name{font-size:clamp(25px,5vw,42px);font-weight:1000;letter-spacing:-1.5px;color:#fff}
-.kx-brand-name b{color:#ff3030}
+.kx-brand-name b{color:#d52bdf}
 .ios-menu-list{list-style:none;padding:0;margin:0 0 25px;text-align:center}
 .ios-menu-list li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.07);color:#eee;font-size:16px}
 .ios-menu-list small{display:block;color:#aaa;font-size:12px;margin-top:3px}
@@ -137,14 +137,14 @@ input{
 .kx-main-packs{padding-top:45px}
 .kx-main-packs .sub{margin-bottom:28px}
 .kx-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
-.kx-pack-card{background:linear-gradient(145deg,#080808,#000000);border:1px solid #8b1717;border-radius:22px;padding:30px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
-.kx-pack-card h3{font-size:25px;line-height:1.25;margin:0 0 8px}
-.kx-pack-image{display:block;width:100%;max-height:220px;object-fit:cover;border-radius:14px;margin:0 0 18px;background:#1f0b0b;border:1px dashed #8b1717}
-.kx-image-placeholder{display:grid;place-items:center;min-height:120px;margin:0 0 18px;border:1px dashed #8b1717;border-radius:14px;color:#e0aaaa;text-align:center;padding:16px}
+.kx-pack-card{background:linear-gradient(145deg,#080808,#000000);border:1px solid #76228a;border-radius:22px;padding:30px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.kx-pack-card h3{font-size:25px;line-height:1.25;margin:0 0 8px;text-transform:uppercase;font-weight:950;letter-spacing:-.4px}
+.kx-pack-image{display:block;width:100%;max-height:220px;object-fit:cover;border-radius:14px;margin:0 0 18px;background:#1f0b0b;border:1px dashed #76228a}
+.kx-image-placeholder{display:grid;place-items:center;min-height:120px;margin:0 0 18px;border:1px dashed #76228a;border-radius:14px;color:#e0aaaa;text-align:center;padding:16px}
 .kx-price{font-size:28px;font-weight:900;margin-bottom:20px}
 .kx-pack-card ul{list-style:none;padding:0;margin:0 0 25px}
 .kx-pack-card li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.07);color:#eee}
-.kx-buy{display:block;text-align:center;padding:14px 20px;border-radius:12px;background:linear-gradient(90deg,#c90000,#ff3030);color:#fff;text-decoration:none;font-weight:900}
+.kx-buy{display:block;text-align:center;padding:14px 20px;border-radius:12px;background:linear-gradient(90deg,#9413c8,#d52bdf);color:#fff;text-decoration:none;font-weight:900}
 .kx-links{padding-top:15px}
 .kx-link-grid{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .kx-link-grid .btn{margin-top:8px}
@@ -154,7 +154,7 @@ input{
 
 <style id="red-particle-background">
 #red-particle-canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:9999;opacity:.72}
-@media (prefers-reduced-motion: reduce){#red-particle-canvas{display:none}}
+@media (prefers-reduced-motion: reduce){#red-particle-canvas{display:none}html{scroll-behavior:auto}}
 </style>
 
 <style id="kx-intro-loader-style">
@@ -162,33 +162,33 @@ input{
 #kx-intro-loader.kx-loader-done{opacity:0;visibility:hidden;pointer-events:none}
 .kx-loader-inner{width:min(420px,100%);text-align:center}
 .kx-loader-logo{font-size:clamp(30px,8vw,46px);font-weight:950;letter-spacing:-1.8px;color:#fff;text-shadow:0 0 24px #ff171744}
-.kx-loader-logo span{color:#ff3030}
+.kx-loader-logo span{color:#d52bdf}
 .kx-loader-tag{color:#aaa;font-size:12px;letter-spacing:3px;margin-top:12px}
 .kx-loader-number{font-size:52px;font-weight:900;margin:32px 0 12px;color:#fff;font-variant-numeric:tabular-nums}
-.kx-loader-number span{color:#ff3030}
+.kx-loader-number span{color:#d52bdf}
 .kx-loader-track{height:7px;border-radius:20px;background:#292027;overflow:hidden;border:1px solid #492020}
-#kx-loader-progress{height:100%;width:0;background:linear-gradient(90deg,#a90000,#ff2020,#ff7777);border-radius:20px;box-shadow:0 0 18px #ff2020;transition:width .08s linear}
+#kx-loader-progress{height:100%;width:0;background:linear-gradient(90deg,#a90000,#d52bdf,#ff7777);border-radius:20px;box-shadow:0 0 18px #d52bdf;transition:width .08s linear}
 .kx-loader-status{color:#c6bfc5;font-size:12px;letter-spacing:2px;margin-top:16px}
-.kx-loader-pulse{display:inline-block;width:6px;height:6px;border-radius:50%;background:#ff3030;margin-right:7px;box-shadow:0 0 12px #ff3030}
+.kx-loader-pulse{display:inline-block;width:6px;height:6px;border-radius:50%;background:#d52bdf;margin-right:7px;box-shadow:0 0 12px #d52bdf}
 @media(prefers-reduced-motion:reduce){#kx-intro-loader{transition:none}}
 </style>
 
 
 <style id="sensi-store-ios-card">
 .sensi-ios-pack{text-align:center}
-.sensi-ios-icon{display:grid;place-items:center;width:100%;min-height:145px;border-radius:18px;background:radial-gradient(circle at 50% 25%,#ff4040,#260707 68%,#080808);border:1px solid #ff3030;color:#fff;font-size:74px;font-weight:900;margin-bottom:18px;text-shadow:0 0 22px #ff2020}
+.sensi-ios-icon{display:grid;place-items:center;width:100%;min-height:145px;border-radius:18px;background:radial-gradient(circle at 50% 25%,#b82bd4,#260733 68%,#080808);border:1px solid #d52bdf;color:#fff;font-size:74px;font-weight:900;margin-bottom:18px;text-shadow:0 0 22px #d52bdf}
 .sensi-ios-pack p{color:#bbb;margin:10px 0}
 </style>
 
 <style id="kx-plan-details-style">
 .kx-plan-details{margin:18px 0 24px;border-top:1px solid #38343e;border-bottom:1px solid #38343e;text-align:left}
-.kx-plan-details summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 0;color:#92919d;font-size:16px;font-weight:800;cursor:pointer}
+.kx-plan-details summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 0;color:#f5f3f8;font-size:16px;font-weight:900;text-transform:uppercase;cursor:pointer}
 .kx-plan-details summary::-webkit-details-marker{display:none}
 .kx-plan-chevron{font-size:24px;color:#c8c5d0;transition:transform .2s}
 .kx-plan-details[open] .kx-plan-chevron{transform:rotate(180deg)}
 .kx-plan-scroll{max-height:360px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#b82bbd #17151e;padding:0 8px 12px 0}
 .kx-plan-scroll ul{list-style:none!important;margin:0!important;padding:0!important}
-.kx-plan-scroll li{display:flex;align-items:flex-start;gap:10px;padding:10px 0!important;border-bottom:0!important;color:#e5e3e9!important;line-height:1.45}
+.kx-plan-scroll li{display:flex;align-items:flex-start;gap:10px;padding:10px 0!important;border-bottom:0!important;color:#f5f3f8!important;line-height:1.45;font-weight:750;text-transform:uppercase;letter-spacing:.2px}
 .kx-detail-check{flex:0 0 20px;display:inline-grid;place-items:center;width:20px;height:20px;margin-top:1px;border-radius:50%;background:#00d26a;color:#06140b;font-size:12px;font-weight:900}
 @media(max-width:480px){.kx-plan-scroll{max-height:340px}.kx-plan-details summary{font-size:15px}}
 </style>
@@ -255,9 +255,9 @@ input{
  <div class="kx-brand-logo" role="img" aria-label="Noor X sensi logo"><span class="kx-brand-mark">N</span><span class="kx-brand-name">NOOR <b>X SENSI</b></span></div>
  
 <h3>👑 SPECIAL PACK</h3>
-<div class="kx-price">රු. 3,000</div>
+<div class="kx-price">රු. 2,500</div>
 <p class="kx-android-version">( Android version 11+ )</p>
-<details class="kx-plan-details"><summary><span class="kx-plan-label">▤&nbsp; View Plan Details</span><span class="kx-plan-chevron">⌄</span></summary><div class="kx-plan-scroll"><ul><li><span class="kx-detail-check">✓</span> 1) AIM LOCK 🔴</li><li><span class="kx-detail-check">✓</span> 2) AIMSTABLE 🎯</li><li><span class="kx-detail-check">✓</span> 3) EASY DRAG REG ⬆️</li><li><span class="kx-detail-check">✓</span> 4) RECOIL CONFIG ⚙️</li><li><span class="kx-detail-check">✓</span> 5) RX95i 🔴</li><li><span class="kx-detail-check">✓</span> 6) AX RECOIL FIX 🩸✅</li><li><span class="kx-detail-check">✓</span> 7) OBB ⚜️</li><li><span class="kx-detail-check">✓</span> 8) AIM SPREAD FIX ⚠️</li><li><span class="kx-detail-check">✓</span> 9) BOOST 📱</li><li><span class="kx-detail-check">✓</span> 10) ACTIVITY LAUNCHER 🔴👾</li><li><span class="kx-detail-check">✓</span> 11) SENSI REGEDIT ☣️</li><li><span class="kx-detail-check">✓</span> 12) SENSI MACRO 🩸📥☣️</li><li><span class="kx-detail-check">✓</span> 13) SENSI TRICK BUTTON 💥</li><li><span class="kx-detail-check">✓</span> 14) SENSI SPEEDBOOST 🔴</li><li><span class="kx-detail-check">✓</span> 15) SENSI GAME HUD ⏏️</li><li><span class="kx-detail-check">✓</span> ( android version 11+ )</li></ul></div></details>
+<details class="kx-plan-details"><summary><span class="kx-plan-label">▤&nbsp; VIEW PLAN DETAILS</span><span class="kx-plan-chevron">⌄</span></summary><div class="kx-plan-scroll"><ul><li><span class="kx-detail-check">✓</span> Aim Recoil Fix</li><li><span class="kx-detail-check">✓</span> FPS Unlock</li><li><span class="kx-detail-check">✓</span> Aim Stabilize</li><li><span class="kx-detail-check">✓</span> Easy Drag Regedit</li><li><span class="kx-detail-check">✓</span> Aim Stable Regedit</li><li><span class="kx-detail-check">✓</span> Data Regedit</li><li><span class="kx-detail-check">✓</span> OBB Regs</li><li><span class="kx-detail-check">✓</span> AX Manager Boost</li><li><span class="kx-detail-check">✓</span> NOOR REGEDIT</li><li><span class="kx-detail-check">✓</span> Macrodroid Reg</li><li><span class="kx-detail-check">✓</span> Trick Button</li><li><span class="kx-detail-check">✓</span> Activity Launcher</li><li><span class="kx-detail-check">✓</span> Android Optimize</li><li><span class="kx-detail-check">✓</span> Game Booster</li><li><span class="kx-detail-check">✓</span> Q Booster</li><li><span class="kx-detail-check">✓</span> Speed Boost</li><li><span class="kx-detail-check">✓</span> Setting Config</li><li><span class="kx-detail-check">✓</span> Gaming HUD</li></ul></div></details>
 <a class="kx-buy" href="https://wa.me/94756027283?text=Hello%20Noor%20X%20sensi%2C%20I%20want%20to%20buy%20SPECIAL%20PACK." target="_blank" rel="noopener">BUY NOW</a>
 </article>
 <article class="kx-pack-card">
@@ -266,7 +266,7 @@ input{
 <h3>🎮 FULL PACK</h3>
 <div class="kx-price">රු. 1,800</div>
 <p class="kx-android-version">( Android version 11+ )</p>
-<details class="kx-plan-details"><summary><span class="kx-plan-label">▤&nbsp; View Plan Details</span><span class="kx-plan-chevron">⌄</span></summary><div class="kx-plan-scroll"><ul><li><span class="kx-detail-check">✓</span> 1) AIM LOCK 🔴</li><li><span class="kx-detail-check">✓</span> 2) AIM SPREAD FIX 👾</li><li><span class="kx-detail-check">✓</span> 3) SENSI DEVELOPER OPTIONS SETTING ⚙️</li><li><span class="kx-detail-check">✓</span> 4) SENSI AIM STABLE 🔺</li><li><span class="kx-detail-check">✓</span> 5) SENSI REGEDIT ☣️</li><li><span class="kx-detail-check">✓</span> 6) SENSI EASY DRAG ⬆️</li><li><span class="kx-detail-check">✓</span> 7) SENSI DRAG SMOOTH</li><li><span class="kx-detail-check">✓</span> 8) SENSI DEVICE OPTIMIZE ⚙️👾</li><li><span class="kx-detail-check">✓</span> 9) OBB ⚙️👾</li><li><span class="kx-detail-check">✓</span> 10) SENSI FREE FIRE HUD ⬆️</li><li><span class="kx-detail-check">✓</span> ( android version 11+ )</li></ul></div></details>
+<details class="kx-plan-details"><summary><span class="kx-plan-label">▤&nbsp; VIEW PLAN DETAILS</span><span class="kx-plan-chevron">⌄</span></summary><div class="kx-plan-scroll"><ul><li><span class="kx-detail-check">✓</span> Aim Recoil Fix 📍</li><li><span class="kx-detail-check">✓</span> Aim Stable Regedit 🎯</li><li><span class="kx-detail-check">✓</span> Obb Regs 🎯</li><li><span class="kx-detail-check">✓</span> NOOR REGEDIT 🗂️</li><li><span class="kx-detail-check">✓</span> Macrodroid Reg 🕹️</li><li><span class="kx-detail-check">✓</span> Trick Button ♦️</li><li><span class="kx-detail-check">✓</span> Activity Launcher 🎯</li><li><span class="kx-detail-check">✓</span> Game Booster 🎮</li><li><span class="kx-detail-check">✓</span> Q Booster 🕹️</li><li><span class="kx-detail-check">✓</span> Gaming Hud ✅</li></ul></div></details>
 <a class="kx-buy" href="https://wa.me/94756027283?text=Hello%20Noor%20X%20sensi%2C%20I%20want%20to%20buy%20FULL%20PACK." target="_blank" rel="noopener">BUY NOW</a>
 </article>
 <article class="kx-pack-card">
@@ -455,7 +455,7 @@ function calcDpi(){
 
 
 <style id="kx-tap-plus-style">
-.kx-tap-plus{position:fixed;z-index:100001;pointer-events:none;color:#ff3030;font:900 22px/1 Arial,sans-serif;text-shadow:0 0 10px #ff3030;animation:kxPlusPop .55s ease-out forwards}
+.kx-tap-plus{position:fixed;z-index:100001;pointer-events:none;color:#d52bdf;font:900 27px/1 Arial,sans-serif;text-shadow:0 0 10px #d52bdf;animation:kxPlusPop .55s ease-out forwards}
 @keyframes kxPlusPop{0%{opacity:0;transform:translate(-50%,-40%) scale(.55)}20%{opacity:1;transform:translate(-50%,-60%) scale(1.2)}100%{opacity:0;transform:translate(-50%,-125%) scale(.85)}}
 </style>
 <script id="kx-tap-plus-script">
