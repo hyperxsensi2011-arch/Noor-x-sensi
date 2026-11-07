@@ -316,6 +316,64 @@ section,.section,main,footer,.hero,.container{background-color:transparent!impor
 .kx-brand-logo{overflow:hidden!important}
 </style>
 
+
+<style id="noor-logo-red-orbit-scan">
+/* Animated broken red orbit around the main logo */
+.hero-emblem{
+  position:relative!important;
+  overflow:visible!important;
+  isolation:isolate;
+  border:0!important;
+  box-shadow:none!important;
+  background:transparent!important;
+}
+.hero-emblem img{
+  position:relative;
+  z-index:1;
+  display:block;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid rgba(255,35,55,.35)!important;
+  box-shadow:0 0 18px rgba(255,20,40,.22)!important;
+}
+.hero-emblem:before{
+  content:"";
+  position:absolute;
+  z-index:2;
+  inset:-9px;
+  border:3px dashed #ff1b35;
+  border-radius:50%;
+  filter:drop-shadow(0 0 5px #ff1028) drop-shadow(0 0 12px #b00016);
+  animation:noorOrbitSpin 5s linear infinite;
+  pointer-events:none;
+}
+.hero-emblem:after{
+  content:"";
+  position:absolute;
+  z-index:3;
+  left:3%;
+  right:3%;
+  top:0;
+  height:3px;
+  border-radius:50%;
+  background:linear-gradient(90deg,transparent,#ff263f 18%,#fff 50%,#ff263f 82%,transparent);
+  box-shadow:0 0 8px #ff1028,0 0 18px #ff1028;
+  animation:noorLogoScan 2.4s ease-in-out infinite alternate;
+  pointer-events:none;
+}
+@keyframes noorOrbitSpin{to{transform:rotate(360deg)}}
+@keyframes noorLogoScan{
+  0%{top:7%;opacity:.25;transform:scaleX(.72)}
+  50%{opacity:1}
+  100%{top:91%;opacity:.25;transform:scaleX(.72)}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-emblem:before,.hero-emblem:after{animation:none}
+}
+</style>
+
 </head>
 <body>
 <div aria-label="Loading Noor X sensi website" id="kx-intro-loader" role="status">
